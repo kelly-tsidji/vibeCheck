@@ -63,7 +63,8 @@
       var events = response._embedded.events;
       if (events && events.length > 0) {
         events.forEach(function(event) {
-          eventsContainer.append("<p>" + event.name + "</p>");
+          var eventLink = $("<a>").attr("href", event.url).attr("target", "_blank").text(event.name);
+          eventsContainer.append(eventLink).append("<br>");
         });
       } else {
         eventsContainer.append("<p>No events found nearby.</p>");
@@ -126,3 +127,4 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUbwdxaE7XL0VmYBsOrE7I4Wu0sX7Ble0&callback=initMap" async defer></script>
 </body>
 </html>
+
