@@ -92,8 +92,8 @@
             return hash;
         }
   
-        // authCode=getCodeFromUrl();        TODO: uncomment later, doesn't work for me
-        authCode = 'BQDzL2mbSdGZGN4BaKXjqBEEr_HyeSn3ohMBxCj-k3jOJ47NeDauUBGP5UcOiyUmRncB0Q4s4-OURE95z5dcGbGfPOA9onfPrDaYRkB4k1RA17pWURc';
+        authCode=getCodeFromUrl();        // TODO: uncomment later, doesn't work for me
+        // authCode = 'BQDzL2mbSdGZGN4BaKXjqBEEr_HyeSn3ohMBxCj-k3jOJ47NeDauUBGP5UcOiyUmRncB0Q4s4-OURE95z5dcGbGfPOA9onfPrDaYRkB4k1RA17pWURc';
         authCode= 'Bearer '+authCode; //formatting so it can be used for later calls
         console.log("new token by kelly");
         sessionStorage.setItem('authCode', authCode);//setting this so it can be used elsewhere in the site
