@@ -95,6 +95,7 @@
              + client_id + '&scope=' + encodeURIComponent(scopes)+'&redirect_uri=' + encodeURIComponent(redirect_uri);
             //sessionStorage.setItem('loggedInSpotify',1);
             window.location.href = authUrl;
+            console.log("GOT TO RESULT");
         });
 
         // Function to extract code from URL after redirection
