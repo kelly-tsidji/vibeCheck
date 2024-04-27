@@ -39,6 +39,7 @@
 
 <script type="text/javascript">
     userArtists=sessionStorage.getItem('userArtists');
+    console.log("1st user artist");
     console.log(userArtists);
     
     pics=sessionStorage.getItem('userArtistsPics');
@@ -46,6 +47,7 @@
     //if its not logged into spotify don't show concerts
 
   if (userArtists==null) {
+    console.log("no artists");
     document.getElementById("concerts").style.display="none";
     document.getElementById("loginBlurb").style.display="inline";
   }
@@ -63,6 +65,7 @@
     userArtists=userArtists.split(",");
     pics=pics.split(",");
     console.log(pics);
+    console.log("2nd user artist");
     console.log(userArtists);
 
     stringCode="";
