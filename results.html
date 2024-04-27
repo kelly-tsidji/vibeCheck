@@ -279,12 +279,15 @@
               sessionStorage.setItem('relatedArtists',dataArr[2]);
               sessionStorage.setItem('relatedArtistsIDs',dataArr[3]);
               sessionStorage.setItem('artistData',myArtistsData);
-              window.location.href='main.html';
+
+              // TODO: uncomment later
+              //window.location.href='main.html';
             }else{
               dataArr=sessionStorage.getItem('array');
               dataArrParsed= JSON.parse(dataArr);
               console.log(dataArrParsed);
-              window.location.href='main.html';//Redirect to main.html
+              // TODO: uncomment later
+              //window.location.href='main.html';//Redirect to main.html
             }
           }
 
