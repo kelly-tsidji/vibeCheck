@@ -289,14 +289,12 @@
               sessionStorage.setItem('relatedArtistsIDs',dataArr[3]);
               sessionStorage.setItem('artistData',myArtistsData);
 
-              // TODO: uncomment later
               window.location.href='main.html';
             }else{
               dataArr=sessionStorage.getItem('array');
               dataArrParsed= JSON.parse(dataArr);
               console.log(dataArrParsed);
-              // TODO: uncomment later
-              window.location.href='main.html';//Redirect to main.html
+              window.location.href='main.html';    //Redirect to main.html
             }
           }
 
