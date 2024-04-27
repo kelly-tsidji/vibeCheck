@@ -82,6 +82,7 @@
       
         // Function to get authorization code from url
         function getCodeFromUrl() {
+            console.log("about to get key or whatever");
             var urlParams = new URLSearchParams(window.location.search);
             var hash =window.location.hash;
             console.log(hash);
@@ -103,9 +104,12 @@
 
         //gets all of the user's top artists (short-term, medium term, and long-term) and adds them to myArtists and myArtistsIDs
         async function getTopArtists(){
+          console.log("about to get the top artists");
           terms=['long_term','medium_term','short_term'];
           //gets all of the top artists for all of the terms offered
           for(let i = 0; i < terms.length; i++){
+            console.log("term");
+            console.log(terms[i]);
             artist_url='https://api.spotify.com/v1/me/top/artists?time_range='+terms[i]+'&limit=50';
             const response= await fetch(artist_url,{
             method: 'GET',
@@ -114,6 +118,7 @@
               }});  
               const data = await response.json();
               myData=data.items;
+              console.log(myData);
               //looping through each artist
               for(let q=0; q<myData.length; q++){
                 curName=myData[q].name;
