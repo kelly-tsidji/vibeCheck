@@ -1,0 +1,238 @@
+html {
+  background-color: #689689;
+}
+
+body { 
+  margin: 0;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* #termSelection{
+  color: white; 
+} */
+
+#topArtists{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  padding: 0px;
+  gap: 40px 40px;
+
+  /* position: absolute;
+  width: 1044px;
+  height: 531px;
+  left: 91px;
+  top: 300px; */
+}
+
+.artistBlurb{ 
+  width: 320px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  background: #F2C1D9;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 5px;
+}
+.artistBlurb img{
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border: 3px solid #F54375;
+  border-radius: 30px;
+}
+
+.artistBlurb h2{
+  font-family: 'Lexend', Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  color: #ffffff;
+  text-align: center;
+  margin: 0px; 
+}
+.artistBlurb .genres{
+  position: absolute;
+  width: 389px;
+  height: 44px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 44px;
+
+  color: #FFFFFF;
+
+
+}
+
+.logo{
+  padding-left: 10px;
+}
+.header {
+  overflow: hidden;
+  background-color: #F54375;
+  padding: 10px 20px;
+  font-family: 'Lexend', Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.header-right a {
+  float: left;
+  color: #092119;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 30px;
+  transition-duration: 300ms;
+}
+
+.header h1 a {
+  color: #092119;
+  text-decoration: none;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header-right a:hover {
+  background-color: #F2C1D9;
+  color: #092119;
+}
+
+.header-right a.active {
+  background-color: #F2C1D9;
+  color: #092119;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+button{
+  border-radius: 30px; 
+  padding: 15px; 
+  font-family: 'Lexend', Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background-color: #F54375;
+  color: #c9e5dd;
+  border-width: 5px;
+  transition-duration: 300ms;
+}
+button:hover{ 
+  background-color: #F2C1D9; 
+  color: #092119; 
+}
+
+p {
+  text-align: center;
+  font-family: 'Inter', Verdana, Geneva, Tahoma, sans-serif;
+  color:#092119; 
+  font-size: 25px;
+  font-style: italic;
+}
+
+/* .footer {
+  background-color: #F54375;
+  padding: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+} */
+
+h1{
+  font-family: 'Lexend', Verdana, Geneva, Tahoma, sans-serif;
+  color:#092119;
+}
+h2{
+  font-family: 'Lexend', Verdana, Geneva, Tahoma, sans-serif;
+  color:#092119;
+
+}
+
+/*MUSIC NOTE ANIMATION*/
+.musicNotesAnimation {
+  display: block;
+  color: color:#092119;
+  margin: auto;
+  position: relative;
+  width: 50%;
+  min-width: 300px;
+  height: 200px;
+  border: 0px solid #000;
+}
+
+.note-1,
+.note-2,
+.note-3,
+.note-4 {
+  position: absolute;
+  animation: notes 2s infinite linear;
+  font-size: 35px;
+  opacity: 0;
+}
+
+.note-1 {
+  top: 60px;
+  left: 0;
+  animation-delay: 0.5s;
+}
+
+.note-2 {
+  top: 30px;
+  left: 30%;
+  animation-delay: 1s;
+}
+
+.note-3 {
+  top: 90px;
+  left: 60%;
+  animation-delay: 1.5s;
+}
+
+.note-4 {
+  top: 40px;
+  left: 90%;
+  animation-delay: 2s;
+}
+
+@keyframes notes {
+  0% {
+    transform: scale(1) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5) translate(50%, -50%);
+  }
+  80% {
+    opacity: 0;
+    transform: scale(1.5) translate(100%, -100%);
+  }
+  100% {
+    transform: scale(1.5) translate(100%, -100%);
+    opacity: 0;
+  }
+}
