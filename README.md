@@ -10,10 +10,15 @@ VibeCheck fetches an user's top Spotify artists using the Spotify API. The appli
 - Database: MySQL (for storing user and artist data)
 - APIs: Spotify API, Ticketmaster API
 
-## Features
+## Key Features
 ![VibeCheck](https://github.com/kelly-tsidji/vibeCheck/assets/86772393/5f7f06c3-ca08-40e4-80e2-88e711450fac)
 ![VibeCheck (1)](https://github.com/kelly-tsidji/vibeCheck/assets/86772393/aff4b1a2-2959-487b-bd93-9fdb493b219f)
 
+## Contributions
+- Kelly T.: Ticketmaster API, Password Calidation
+- Oliver B.: Ticketmaster API, Database
+- Sloan W.: Spotify API, Styling
+- Jackie C.: Styling, Photo Slideshow
 
 ## Database Schema
 The database schema includes the following tables:
